@@ -1,0 +1,10 @@
+[mysqld]
+character-set-server=utf8
+
+server-id=1
+log-bin=/var/log/mysql/mysql-bin.log
+binlog_do_db=mage2
+
+[client]
+port          = 3306
+socket        = /var/run/mysqld/mysqld.sock

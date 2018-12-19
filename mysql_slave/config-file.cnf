@@ -1,0 +1,11 @@
+[mysqld]
+character-set-server=utf8
+
+server-id=2
+relay-log=/var/log/mysql/mysql-relay-bin.log
+log_bin=/var/log/mysql/mysql-bin.log
+binlog_do_db=mage2
+
+[client]
+port          = 3306
+socket        = /var/run/mysqld/mysqld.sock
